@@ -1,48 +1,37 @@
 
-if (typeof gdjs.evtsExt__Clipboard__WriteText !== "undefined") {
-  gdjs.evtsExt__Clipboard__WriteText.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CursorType__onScenePreEvents !== "undefined") {
+  gdjs.evtsExt__CursorType__onScenePreEvents.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__Clipboard__WriteText = {};
+gdjs.evtsExt__CursorType__onScenePreEvents = {};
 
 
-gdjs.evtsExt__Clipboard__WriteText.userFunc0xd029f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-const electron = runtimeScene.getGame().getRenderer().getElectron();
-const text = eventsFunctionContext.getArgument("text");
-
-if (electron !== null && electron.clipboard)
-  electron.clipboard.writeText(text);
-else if (
-  typeof cordova !== "undefined" &&
-  cordova.plugins &&
-  cordova.plugins.clipboard
-) cordova.plugins.clipboard.copy(text);
-else if (
-  typeof navigator !== "undefined" &&
-  navigator.clipboard &&
-  navigator.clipboard.writeText
-) navigator.clipboard
-  .writeText(text)
-  .catch(e => console.error("Error while writing clipboard: ", e));
-else console.error("Unable to write to the clipboard: no method found for this platform."); 
-
-};
-gdjs.evtsExt__Clipboard__WriteText.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CursorType__onScenePreEvents.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__Clipboard__WriteText.userFunc0xd029f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setNumber(0);
+}{gdjs.evtsExt__CursorType__DoChangeCursorType.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getAsString(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
 
 };
 
-gdjs.evtsExt__Clipboard__WriteText.func = function(runtimeScene, text, parentEventsFunctionContext) {
+gdjs.evtsExt__CursorType__onScenePreEvents.func = function(runtimeScene, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -50,8 +39,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Clipboard"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Clipboard"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CursorType"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CursorType"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -90,17 +79,20 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "text") return text;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__Clipboard__WriteText.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CursorType__onScenePreEvents.eventsList0(runtimeScene, eventsFunctionContext);
 
 
 return;
 }
 
-gdjs.evtsExt__Clipboard__WriteText.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CursorType__onScenePreEvents.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CursorType__onScenePreEvents.registeredGdjsCallbacks.push((runtimeScene) => {
+    gdjs.evtsExt__CursorType__onScenePreEvents.func(runtimeScene, runtimeScene);
+})
+gdjs.registerRuntimeScenePreEventsCallback(gdjs.evtsExt__CursorType__onScenePreEvents.registeredGdjsCallbacks[gdjs.evtsExt__CursorType__onScenePreEvents.registeredGdjsCallbacks.length - 1]);
