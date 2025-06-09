@@ -40,7 +40,7 @@ gdjs.TestGPUCode.GDNewText7Objects1= [];
 gdjs.TestGPUCode.GDNewText7Objects2= [];
 
 
-gdjs.TestGPUCode.userFunc0x2a8ec00 = function GDJSInlineCode(runtimeScene) {
+gdjs.TestGPUCode.userFunc0x3229d28 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 const canvas = document.createElement('canvas');
 const gl = canvas.getContext('webgl');
@@ -62,7 +62,7 @@ gdjs.TestGPUCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.TestGPUCode.userFunc0x2a8ec00(runtimeScene);
+gdjs.TestGPUCode.userFunc0x3229d28(runtimeScene);
 
 }
 
@@ -114,7 +114,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45961668);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37326860);
 }
 }
 if (isConditionTrue_0) {
@@ -264,7 +264,7 @@ for (var i = 0, k = 0, l = gdjs.TestGPUCode.GDNopeButtonObjects1.length;i<l;++i)
 gdjs.TestGPUCode.GDNopeButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45205012);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37329612);
 }
 }
 }
@@ -356,7 +356,7 @@ for (var i = 0, k = 0, l = gdjs.TestGPUCode.GDNopeButton2Objects1.length;i<l;++i
 gdjs.TestGPUCode.GDNopeButton2Objects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45976572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37331100);
 }
 }
 }
@@ -390,7 +390,7 @@ for (var i = 0, k = 0, l = gdjs.TestGPUCode.GDYepButtonObjects1.length;i<l;++i) 
 gdjs.TestGPUCode.GDYepButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45197964);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37332420);
 }
 }
 }
@@ -475,7 +475,7 @@ for (var i = 0, k = 0, l = gdjs.TestGPUCode.GDYepButton2Objects1.length;i<l;++i)
 gdjs.TestGPUCode.GDYepButton2Objects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45140612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37333780);
 }
 }
 }
@@ -509,7 +509,7 @@ for (var i = 0, k = 0, l = gdjs.TestGPUCode.GDRetourObjects1.length;i<l;++i) {
 gdjs.TestGPUCode.GDRetourObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(45977652);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37335372);
 }
 }
 }
